@@ -1,0 +1,42 @@
+@import "variables/variables";
+@import "header/header";
+@import "main/main";
+@import "brands/brands";
+@import "tehnics/tehnics";
+@import "prices/prices";
+@import "footer/footer";
+@import "sidebar/sidebar";
+@import "call/call";
+@import "feedback/feedback";
+
+html{
+	box-sizing: border-box;
+	margin: 0;
+	background: $backgroundColor;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+@font-face {
+	font-family: TTLakes-Bold;
+	src: url(../fonts/TTLakes-Bold.ttf);
+}
+
+@font-face {
+	font-family: TTLakes-Regular;
+	src: url(../fonts/TTLakes-Regular.ttf);
+}
+
+.page {
+	display: flex;
+	width: 100%;
+	margin: 0;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}

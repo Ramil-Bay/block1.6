@@ -1,0 +1,159 @@
+.sidebar {
+    font-family: "TTLakes-Regular";
+    display: flex;
+    flex-direction: column;
+    background: $whiteColor;
+    min-width: 320px;
+    max-width: 360px;
+    z-index: 4;
+}
+
+.sidebar__header {
+    display: flex;
+    height: 56px;
+    justify-content: space-between;
+    padding: 19px 24px;
+    align-items: center;   
+    margin-top: 25px;
+} 
+
+.sidebar__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sidebar__button--close {
+    background-image: url('../img/close.svg');
+    background-repeat: no-repeat;
+    margin-right: 16px;    
+}
+
+.sidebar__list {
+    padding-left: 0;
+}
+
+.sidebar__item {
+    list-style: none;
+    padding: 16px 24px;
+}
+
+.sidebar__item {
+    .sidebar__link {
+        text-decoration: none;
+        color: #1B1C21;
+        font-weight: 500;    
+    }
+
+    .sidebar__link:hover {    
+        color: #7E7E82;
+    }
+}    
+
+.sidebar__item:hover {
+    background-image: url("../img/highlight.svg");
+    background-position: left;
+    background-repeat: no-repeat;    
+}
+
+.sidebar__button--search {
+    background-image: url('../img/search.svg');
+}
+
+.sidebar__button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+
+}
+
+.sidebar__button--call {
+    background-image: url('../img/call.svg'); 
+}
+
+.sidebar__button--write {
+    background-image: url('../img/chat.svg');
+}
+
+.sidebar__button--about-us {
+    background-image: url('../img/profile.svg');
+}
+
+
+.sidebar__footer {
+    padding: 32px 24px;
+}
+
+.sidebar__button--call, 
+.sidebar__button--write,
+.sidebar__button--about-us {
+    margin-right: 16px;    
+}
+
+.sidebar__button:hover {
+    transform: scale(1.2);
+    opacity: 0.8;  
+    cursor: pointer;  
+}
+
+.sidebar__contacts {
+    padding-bottom: 16px;
+}
+
+.sidebar__email {
+    padding-bottom: 12px;
+    font-weight: 500;
+}
+
+.sidebar__phone {
+    padding-bottom: 40px;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.sidebar__languages {
+    .sidebar__link {
+        font-weight: 500;
+        margin-right: 7px;
+    }
+
+    .sidebar__link:hover {
+        color: #7E7E82;
+    }
+}    
+
+@media screen and (max-width: 767px) {
+    .sidebar {
+        position: absolute;
+        left: -400px;
+        box-shadow: $boxShadow;
+        transition: all linear 0.5s;
+        z-index: 4;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1119px) {
+    .sidebar {
+        position: absolute;
+        left: -400px;
+        box-shadow: $boxShadow;
+        transition: all linear 0.5s;
+        z-index: 4;
+    }
+}
+
+@media screen and (min-width: 1120px) {
+    .sidebar__button--close {
+        display: none;
+    }
+}
+
+.white-background {
+    position: fixed;
+    z-index: 2;
+    opacity: 0.8;
+    height: 100%;
+    width: 100%;
+    background-color: #FFFFFF;
+}
